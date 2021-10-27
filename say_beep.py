@@ -13,20 +13,7 @@ Author: github.com/rezarezaeedev
 
 '''
 import os, sys
-try:
-    import beepy 
-except ImportError:
-    answer=input('Cant import beepy module. if you want install it enter (Y) else any key')
-    if answer=="Y":
-        os.system('pip install beepy')
-        print('\n\nInstallition complete to using.')
-default_sound=3
-try:
-    sound =int (sys.argv[1]) if len(sys.argv)>1 else default_sound
-    if sound < 0 or sound > 7:
-        raise ValueError("Number not between 1-7")
-except ValueError as error:
-    sound = default_sound
+import beepy
 
 beepy.beep(sound)
 
