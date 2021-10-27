@@ -16,7 +16,7 @@ import os, sys
 try:
     import beepy 
 except ImportError:
-    asnwer=input('Cant import beepy module. if you want install it enter (Y) else any key')
+    answer=input('Cant import beepy module. if you want install it enter (Y) else any key')
     if answer=="Y":
         os.system('pip install beepy')
         print('\n\nInstallition complete to using.')
